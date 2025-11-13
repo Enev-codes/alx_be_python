@@ -2,7 +2,7 @@ def find_interest(p, r, t):
     return p * r * t
 
 def render_interest(interest):
-    print("The simple interest is {}".format(interest))
+    print("The simple interest is : {}".format(interest))
 
 def main():
     principal = 1000
