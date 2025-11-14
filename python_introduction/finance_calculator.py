@@ -1,7 +1,7 @@
 def main():
     # Prompt user for data
-    m_income = int(input("Enter your monthly income: "))
-    m_expens = int(input("Enter your total monthly expenses: "))
+    m_income = float(input("Enter your monthly income: "))
+    m_expens = float(input("Enter your total monthly expenses: "))
 
     # Calculate monthly savings
     m_savings = m_income - m_expens
