@@ -1,7 +1,3 @@
-def render(m_sav, pa_sav):
-    print("Your monthly savings are {}\nProjected savings after one year, with interest, is: {}".format(m_sav, pa_sav))
-
-
 def main():
     # Prompt user for data
     m_income = int(input("Enter your monthly income: "))
@@ -16,7 +12,7 @@ def main():
     interest = m_savings * (rate / 100) * (time)
     pm_savings = m_savings + interest
     pa_savings = pm_savings * 12       # projected annual savings
-    render(int(m_savings), int(pa_savings))
+    print("Your monthly savings are {}\nProjected savings after one year, with interest, is: {}".format(int(m_savings), int(pa_savings)))
 
 
 if __name__ == '__main__':
