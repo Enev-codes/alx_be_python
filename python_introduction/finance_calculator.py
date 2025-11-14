@@ -9,9 +9,8 @@ def main():
     # Project annual savings
     rate = 0.05
     time = 1
-    interest = m_savings * rate * time
-    pm_savings = m_savings + interest
-    pa_savings = pm_savings * 12       # projected annual savings
+    interest = m_savings * (time * 12) * rate
+    pa_savings = m_savings * (time * 12) + interest # pas
     print("Your monthly savings are {}\nProjected savings after one year, with interest, is: {}".format(int(m_savings), int(pa_savings)))
 
 
