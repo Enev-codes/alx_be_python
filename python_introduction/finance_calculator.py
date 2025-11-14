@@ -11,7 +11,7 @@ def main():
     time = 1
     interest = m_savings * (time * 12) * rate
     pa_savings = m_savings * (time * 12) + interest # pas
-    print("Your monthly savings are {}\nProjected savings after one year, with interest, is: {}".format(int(m_savings), int(pa_savings)))
+    print("Your monthly savings are ${}.\nProjected savings after one year, with interest, is: ${}.".format(int(m_savings), int(pa_savings)))
 
 
 if __name__ == '__main__':
