@@ -11,8 +11,9 @@ def div(num1, num2):
     return num1 / num2
 
 def perform_operation(num1, num2, operation):
-    if operation == 'divide' | 'Divide' | 'DIVIDE' and num2 == 0:
+    if operation == 'divide' and num2 == 0:
         return None
+
     oper_map = {
             'add': add,
             'subtract': sub,
