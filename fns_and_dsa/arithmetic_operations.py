@@ -1,16 +1,16 @@
-def add(num1: float, num2: float) -> float:
+def add(num1, num2):
     return num1 + num2
 
-def sub(num1: float, num2: float) -> float:
+def sub(num1, num2):
     return num1 - num2
 
-def mul(num1: float, num2: float) -> float:
+def mul(num1, num2):
     return num1 * num2
 
-def div(num1: float, num2: float) -> float:
+def div(num1, num2):
     return num1 / num2
 
-def perform_operation(num1: float, num2: float, operation: str) -> float:
+def perform_operation(num1, num2, operation):
     oper_map = {
             'add': add,
             'subtract': sub,
