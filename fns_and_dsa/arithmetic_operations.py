@@ -24,3 +24,7 @@ def perform_operation(num1, num2, operation):
         return None
     except:
         print("[ Error ]: Invalid operation")
+
+
+if __name__ == '__main__':
+    perform_operation(num1, num2, operation)
