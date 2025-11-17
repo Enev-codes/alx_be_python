@@ -9,7 +9,11 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        choice = int(input("Enter your choice: "))
+        try:
+            choice = int(input("Enter your choice: "))
+            shopping_list.remove(item)
+        except ValueError:
+            print("[ Error ]: Option choice is invalid!")
 
         if choice == '1':
             item = input("Enter name of item: ")
