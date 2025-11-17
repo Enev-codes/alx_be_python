@@ -16,10 +16,10 @@ def main():
             print("[ Error ]: Option choice is invalid!")
 
         if choice == '1':
-            item = input("Enter name of item: ")
+            item = input("Enter the item to add: ")
             shopping_list.append(item)
         elif choice == '2':
-            item = input("(remove) Enter name of item: ")
+            item = input("(remove) Enter the item to remove: ")
             try:
                 shopping_list.remove(item)
             except ValueError:
