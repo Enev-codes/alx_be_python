@@ -34,3 +34,4 @@ class BankAccount:
         '''Reads serialized data into code as actual python objects'''
         with open('account.db', 'rb') as file:
             aza = pickle.load(file)
+            return aza
